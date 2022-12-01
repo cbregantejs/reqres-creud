@@ -14,4 +14,4 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_VAULTED_BAZAAR_343805 }}'
-          projectId: vaulted-bazaar-343805
+          projectId: my-personal-proyect-365207
