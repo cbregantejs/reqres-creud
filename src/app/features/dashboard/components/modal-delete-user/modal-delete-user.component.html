@@ -1,0 +1,5 @@
+<h1 mat-dialog-title>¿Seguro que desea eliminar a {{data.first_name}}?</h1>
+<div mat-dialog-actions>
+  <button mat-stroked-button  (click)="onNoClick()">Cancelar</button>
+  <button mat-raised-button color="primary" [mat-dialog-close]="data">Confirmar</button>
+</div>

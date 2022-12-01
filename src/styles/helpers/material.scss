@@ -1,0 +1,15 @@
+.mat-form-field {
+    width: 100%;
+}
+.success-snackbar {
+    background-color: #30ad30;
+    .mat-simple-snackbar-action {
+      color: white;
+    }
+}
+.error-snackbar {
+    background-color: rgb(189, 32, 32);
+    .mat-simple-snackbar-action {
+        color: white;
+    }
+}

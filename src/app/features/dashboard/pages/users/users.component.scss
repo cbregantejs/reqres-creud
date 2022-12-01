@@ -1,0 +1,11 @@
+.grid-users{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+.cont-actions{
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+}

@@ -1,0 +1,21 @@
+$primary: #1E87FA;
+$primary-hover: #0a57f6;
+$primary-disabled: #62abfc;
+$secondary: #e3332b;
+$secondary-hover: #d01410;
+$secondary-disabled: #f19995;
+$text-color-1: #183b56;
+$alert: rgb(189, 32, 32);
+$success: #30ad30;
+
+:root {
+    --primary: #{$primary};
+    --primary-hover: #{$primary-hover};
+    --primary-disabled: #{$primary-disabled};
+    --secondary: #{$secondary};
+    --secondary-hover: #{$secondary-hover};
+    --secondary-disabled: #{$secondary-disabled};
+    --text-color-1: #{$text-color-1};
+    --alert: #{$alert};
+    --success: #{$success};
+  }

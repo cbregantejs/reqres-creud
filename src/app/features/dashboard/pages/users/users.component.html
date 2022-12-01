@@ -1,0 +1,19 @@
+<div [hidden]="!showForm">
+    <app-form-user (closeForm)="toggleForm(false)" [stateForm]="showForm"
+        (refreshUsers)="getUsers(currentPage)">
+    </app-form-user>
+</div>
+<mat-card class="mt-3">
+    <div class="cont-actions">
+        <app-pagination-user [currentPage]="currentPage" [totalPages]="totalPages" 
+            (setNewPage)="getUsers($event)"></app-pagination-user>
+        <button mat-raised-button color="primary" (click)="toggleForm(true)" *ngIf="!showForm">
+            <span>Nuevo Usuario</span>
+        </button>
+    </div>
+</mat-card>
+<div class="grid-users">
+    <ng-container *ngFor="let user of userList">
+        <app-card-user (removeUser)="removeUser($event)" [user]="user"></app-card-user>
+    </ng-container>
+</div>

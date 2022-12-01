@@ -1,0 +1,6 @@
+<mat-form-field appearance="fill">
+    <mat-label>Páginas</mat-label>
+    <mat-select [(value)]="currentPage"  (valueChange)="changePage($event)">
+      <mat-option [value]="number" *ngFor="let number of pagesList">{{ number }}</mat-option>
+    </mat-select>
+</mat-form-field>

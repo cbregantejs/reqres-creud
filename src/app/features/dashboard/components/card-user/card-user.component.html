@@ -1,0 +1,19 @@
+<mat-card class="mt-1" *ngIf="user" ngClass="card-user">
+    <div class="cont-avatar">
+        <img [src]="user.avatar" alt="user.first_name" loading="lazy">
+    </div>
+    <div class="cont-info">
+        <h3>{{ user.first_name + ' ' + user.last_name }}</h3>
+        <span>{{ user.email }}</span>
+        <div class="actions">
+            <button mat-icon-button color="primary" aria-label="Eliminar Usuario"  matTooltip="Eliminar Usuario" 
+                (click)="openModalDeleteUser()">
+                <mat-icon>delete</mat-icon>
+            </button>
+            <button mat-icon-button color="primary" aria-label="Seleccionar Usuario"  matTooltip="Seleccionar Usuario" 
+                (click)="selectUser()">
+                <mat-icon>edit</mat-icon>
+            </button>
+        </div>
+    </div>
+</mat-card>

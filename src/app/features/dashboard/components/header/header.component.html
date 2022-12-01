@@ -1,0 +1,13 @@
+<mat-toolbar  class="app-toolbar" color="primary">
+    <span class="title-toolbar">{{ title }}</span>
+
+    <div class="cont-user">
+      <div class="info-user" *ngIf="emailUser">
+        <span class="user-role">Usuario</span>
+        <span class="user-name">{{ emailUser }}</span>
+      </div>
+      <button class="button-logout" mat-icon-button (click)="logout()">
+        <mat-icon>logout</mat-icon>
+      </button>
+    </div>
+</mat-toolbar>
