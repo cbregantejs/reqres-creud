@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.9.
 
+## Demo
+`https://my-personal-proyect-365207.web.app/login`
+#mock credentials
+email: eve.holt@reqres.in
+any password
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
